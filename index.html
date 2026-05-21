@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>International Summer School 2026 on Generative AI | JIS College of Engineering</title>
-  <meta name="description" content="15-day online Generative AI Summer School. 29 June – 10 July 2026. Organized by Dept. of CST & CSE(AIML), JIS College of Engineering.">
+  <meta name="description"
+    content="15-day online Generative AI Summer School. 29 June – 10 July 2026. Organized by Dept. of CST & CSE(AIML), JIS College of Engineering.">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="styles.css">
@@ -60,28 +62,98 @@
       --input: 240 3.7% 15.9%;
       --ring: 240 4.9% 83.9%;
     }
-    body { background-color: hsl(var(--background)); color: hsl(var(--foreground)); font-family: 'Inter', sans-serif; overflow-x: hidden; scroll-behavior: smooth; }
-    .glass { background: rgba(10, 10, 12, 0.4); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); }
-    .text-gradient { background: linear-gradient(to right, #4549f5, #0cf9ed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .glow-neon { box-shadow: 0 0 20px rgba(12, 249, 237, 0.2); }
-    .hover-glow-border:hover { box-shadow: 0 0 15px rgba(12, 249, 237, 0.3); }
-    .marquee { animation: marquee 30s linear infinite; }
-    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 12px)); } }
-    .grid-bg { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px); }
-    .animate-pulse-glow { animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-    @keyframes pulseGlow { 0%, 100% { opacity: 1; box-shadow: 0 0 15px #0cf9ed; } 50% { opacity: .5; box-shadow: 0 0 5px #0cf9ed; } }
-    .fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
-    .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+
+    body {
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .glass {
+      background: rgba(10, 10, 12, 0.4);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #4549f5, #0cf9ed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glow-neon {
+      box-shadow: 0 0 20px rgba(12, 249, 237, 0.2);
+    }
+
+    .hover-glow-border:hover {
+      box-shadow: 0 0 15px rgba(12, 249, 237, 0.3);
+    }
+
+    .marquee {
+      animation: marquee 30s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-50% - 12px));
+      }
+    }
+
+    .grid-bg {
+      background-size: 50px 50px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    }
+
+    .animate-pulse-glow {
+      animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulseGlow {
+
+      0%,
+      100% {
+        opacity: 1;
+        box-shadow: 0 0 15px #0cf9ed;
+      }
+
+      50% {
+        opacity: .5;
+        box-shadow: 0 0 5px #0cf9ed;
+      }
+    }
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body class="bg-background text-foreground min-h-screen selection:bg-neon/30 antialiased">
   <div class="fixed inset-0 z-[-1] grid-bg opacity-30"></div>
-  
+
   <header class="fixed top-0 left-0 right-0 z-50 px-4 sm:px-4 py-3 sm:py-4">
     <div class="mx-auto max-w-7xl glass rounded-full px-4 sm:px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <span class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">International Summer School on Generative AI 2026</span>
+        <span class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">International Summer School
+          on Generative AI 2026</span>
       </div>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#about" class="hover:text-neon transition">About</a>
@@ -91,15 +163,20 @@
         <a href="#register" class="hover:text-neon transition">Register</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfumRWp9TDO6VQa4MO4_gLYOPada4VhFWIc2nPw7uzRgNpQ/viewform?usp=sharing&ouid=116997449402096072585" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex text-xs font-mono uppercase tracking-wider px-4 py-2 rounded-full bg-primary text-primary-foreground hover:glow-border transition">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfumRWp9TDO6VQa4MO4_gLYOPada4VhFWIc2nPw7uzRgNpQ/viewform?usp=sharing&ouid=116997449402096072585"
+          target="_blank" rel="noopener noreferrer"
+          class="hidden sm:inline-flex text-xs font-mono uppercase tracking-wider px-4 py-2 rounded-full bg-primary text-primary-foreground hover:glow-border transition">
           Register &rarr;
         </a>
-        <button id="mobile-menu-btn" class="md:hidden size-9 flex items-center justify-center rounded-full hover:bg-white/10 transition" aria-label="Menu">
+        <button id="mobile-menu-btn"
+          class="md:hidden size-9 flex items-center justify-center rounded-full hover:bg-white/10 transition"
+          aria-label="Menu">
           <i data-lucide="menu" class="size-5" id="menu-icon"></i>
         </button>
       </div>
     </div>
-    <nav id="mobile-menu" class="hidden md:hidden mt-2 mx-auto max-w-7xl glass rounded-2xl p-4 flex flex-col gap-3 text-sm">
+    <nav id="mobile-menu"
+      class="hidden md:hidden mt-2 mx-auto max-w-7xl glass rounded-2xl p-4 flex flex-col gap-3 text-sm">
       <a href="#about" class="mobile-link px-4 py-3 rounded-lg hover:bg-white/10 transition capitalize">About</a>
       <a href="#program" class="mobile-link px-4 py-3 rounded-lg hover:bg-white/10 transition capitalize">Program</a>
       <a href="#syllabus" class="mobile-link px-4 py-3 rounded-lg hover:bg-white/10 transition capitalize">Syllabus</a>
@@ -118,39 +195,52 @@
       <div class="relative z-10 w-full mx-auto max-w-7xl text-backdrop fade-in-up">
         <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-8">
           <div class="flex items-center gap-4">
-            <img src="assets/jis-group.png" alt="JIS Group" class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
-            <img src="assets/jis-logo.png" alt="JIS Logo" class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
+            <img src="assets/jis-group.png" alt="JIS Group"
+              class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
+            <img src="assets/jis-logo.png" alt="JIS Logo"
+              class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
           </div>
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
             <span class="text-xs font-mono text-muted-foreground uppercase tracking-widest">In association with</span>
             <div class="flex items-center gap-4">
-              <img src="assets/quantum-tiger.jpeg" alt="Quantum Tiger" class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
-              <img src="assets/campuscortex.png" alt="CampusCortex AI" class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
-              <img src="assets/revopsly.png" alt="RevOpsly" class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
+              <img src="assets/quantum-tiger.jpeg" alt="Quantum Tiger"
+                class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
+              <img src="assets/campuscortex.png" alt="CampusCortex AI"
+                class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
+              <img src="assets/revopsly.png" alt="RevOpsly"
+                class="h-12 sm:h-16 w-auto object-contain bg-white rounded p-1" />
             </div>
           </div>
         </div>
 
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-neon/30 text-xs font-mono text-neon mb-6">
-          <span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-neon"></span></span>
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass border border-neon/30 text-xs font-mono text-neon mb-6">
+          <span class="relative flex h-2 w-2"><span
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon opacity-75"></span><span
+              class="relative inline-flex rounded-full h-2 w-2 bg-neon"></span></span>
           Registrations Open
         </div>
         <h1 class="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tighter leading-[1.1] mb-4">
-          INTERNATIONAL<br/>
+          INTERNATIONAL<br />
           <span class="text-gradient">SUMMER SCHOOL</span>
         </h1>
         <p class="text-lg sm:text-xl font-medium text-foreground mb-4 max-w-3xl">
-          Organized by JISCE of JIS Group in association with Quantum Tiger, CampusCortex AI and RevOpsly
+          Organized by JISCE of JIS Group in association with Quantum Tiger, CampusCortex AI and
+          RevOpsly
         </p>
         <p class="text-lg sm:text-xl text-muted-foreground max-w-2xl font-light mb-6 leading-relaxed">
-          15-Day intensive International Summer School on Generative AI. 
+          15-Day intensive International Summer School on Generative AI.
           Master LLMs, Prompt Engineering, and build production-ready AI applications.
         </p>
         <div class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfumRWp9TDO6VQa4MO4_gLYOPada4VhFWIc2nPw7uzRgNpQ/viewform?usp=sharing&ouid=116997449402096072585" target="_blank" rel="noopener noreferrer" class="group relative px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-electric via-violet-glow to-neon text-white font-medium rounded-sm overflow-hidden glow-neon text-center">
-            <span class="relative z-10 flex items-center justify-center gap-2">Register Now <i data-lucide="arrow-right" class="size-4 group-hover:translate-x-1 transition"></i></span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfumRWp9TDO6VQa4MO4_gLYOPada4VhFWIc2nPw7uzRgNpQ/viewform?usp=sharing&ouid=116997449402096072585"
+            target="_blank" rel="noopener noreferrer"
+            class="group relative px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-electric via-violet-glow to-neon text-white font-medium rounded-sm overflow-hidden glow-neon text-center">
+            <span class="relative z-10 flex items-center justify-center gap-2">Register Now <i data-lucide="arrow-right"
+                class="size-4 group-hover:translate-x-1 transition"></i></span>
           </a>
-          <a href="#program" class="px-4 sm:px-6 py-3 sm:py-4 border border-border glass font-medium rounded-sm hover:border-neon transition flex items-center justify-center gap-2">
+          <a href="#program"
+            class="px-4 sm:px-6 py-3 sm:py-4 border border-border glass font-medium rounded-sm hover:border-neon transition flex items-center justify-center gap-2">
             Explore Program <i data-lucide="chevron-right" class="size-4"></i>
           </a>
         </div>
@@ -163,36 +253,49 @@
         <div class="grid lg:grid-cols-2 gap-4 sm:gap-6">
           <div>
             <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 01 &middot; About</div>
-            <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-4 leading-tight">Mastering the era of <br/><span class="text-gradient">Generative Models.</span></h2>
+            <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-4 leading-tight">Mastering the era of
+              <br /><span class="text-gradient">Generative Models.</span></h2>
             <div class="space-y-6 text-muted-foreground text-lg leading-relaxed">
-              <p>Generative AI is reshaping industries, from creative arts to complex software engineering. This comprehensive 15-day summer school is designed to bridge the gap between theoretical knowledge and practical application.</p>
-              <p>Organized by the Department of CST & CSE(AIML) at JIS College of Engineering, participants will engage in hands-on workshops, build live projects, and interact with leading industry experts.</p>
+              <p>Generative AI is reshaping industries, from creative arts to complex software engineering. This
+                comprehensive 15-day summer school is designed to bridge the gap between theoretical knowledge and
+                practical application.</p>
+              <p>Organized by the Department of CST & CSE(AIML) at JIS College of Engineering, participants will engage
+                in hands-on workshops, build live projects, and interact with leading industry experts.</p>
             </div>
           </div>
           <div class="flex flex-col gap-4 justify-center">
-            <div class="glass rounded-lg p-4 sm:p-6 flex items-center justify-between group hover:border-neon transition-colors duration-300">
+            <div
+              class="glass rounded-lg p-4 sm:p-6 flex items-center justify-between group hover:border-neon transition-colors duration-300">
               <div>
                 <div class="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-1">Dates</div>
                 <div class="text-xl sm:text-2xl font-bold">28 Jun &rarr; 12 Jul 2026</div>
                 <div class="text-sm text-neon mt-1 font-mono">Duration: 15 Days</div>
               </div>
-              <div class="size-12 rounded-full border border-border flex items-center justify-center group-hover:bg-neon/10 transition-colors"><i data-lucide="calendar" class="size-5 text-muted-foreground group-hover:text-neon"></i></div>
+              <div
+                class="size-12 rounded-full border border-border flex items-center justify-center group-hover:bg-neon/10 transition-colors">
+                <i data-lucide="calendar" class="size-5 text-muted-foreground group-hover:text-neon"></i></div>
             </div>
-            <div class="glass rounded-lg p-4 sm:p-6 flex items-center justify-between group hover:border-neon transition-colors duration-300">
+            <div
+              class="glass rounded-lg p-4 sm:p-6 flex items-center justify-between group hover:border-neon transition-colors duration-300">
               <div>
                 <div class="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-1">Mode</div>
                 <div class="text-xl sm:text-2xl font-bold">100% Online</div>
                 <div class="text-sm text-neon mt-1 font-mono">Learn from anywhere</div>
               </div>
-              <div class="size-12 rounded-full border border-border flex items-center justify-center group-hover:bg-neon/10 transition-colors"><i data-lucide="wifi" class="size-5 text-muted-foreground group-hover:text-neon"></i></div>
+              <div
+                class="size-12 rounded-full border border-border flex items-center justify-center group-hover:bg-neon/10 transition-colors">
+                <i data-lucide="wifi" class="size-5 text-muted-foreground group-hover:text-neon"></i></div>
             </div>
-            <div class="glass rounded-lg p-4 sm:p-6 flex items-center justify-between group hover:border-neon transition-colors duration-300">
+            <div
+              class="glass rounded-lg p-4 sm:p-6 flex items-center justify-between group hover:border-neon transition-colors duration-300">
               <div>
                 <div class="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-1">Who Can Join</div>
                 <div class="text-xl sm:text-2xl font-bold">Open to all</div>
                 <div class="text-sm text-neon mt-1 font-mono">No prior experience required</div>
               </div>
-              <div class="size-12 rounded-full border border-border flex items-center justify-center group-hover:bg-neon/10 transition-colors"><i data-lucide="users" class="size-5 text-muted-foreground group-hover:text-neon"></i></div>
+              <div
+                class="size-12 rounded-full border border-border flex items-center justify-center group-hover:bg-neon/10 transition-colors">
+                <i data-lucide="users" class="size-5 text-muted-foreground group-hover:text-neon"></i></div>
             </div>
           </div>
         </div>
@@ -204,110 +307,131 @@
       <div class="mx-auto max-w-7xl text-backdrop fade-in-up">
         <div class="flex flex-col items-center text-center mb-4 sm:mb-6">
           <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 02 &middot; Highlights</div>
-          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter">Program <span class="text-gradient">Features.</span></h2>
+          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter">Program <span
+              class="text-gradient">Features.</span></h2>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4">
-          
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="cpu" class="size-5"></i>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="cpu" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Hands-on Training on Generative AI Tools</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Practical sessions using the latest Generative AI
+                platforms and APIs.</p>
+            </div>
           </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Hands-on Training on Generative AI Tools</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Practical sessions using the latest Generative AI platforms and APIs.</p>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="message-square" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Introduction to Large Language Models (LLMs)</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Understand the architecture, capabilities, and
+                mechanics behind LLMs.</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="message-square" class="size-5"></i>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="terminal" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Prompt Engineering Techniques</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Master the art of crafting effective prompts to
+                maximize AI output quality.</p>
+            </div>
           </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Introduction to Large Language Models (LLMs)</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Understand the architecture, capabilities, and mechanics behind LLMs.</p>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="bot" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">AI Chatbot Development</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Build and deploy intelligent conversational
+                agents from scratch.</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="terminal" class="size-5"></i>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="sparkles" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Text, Image, and Code Generation</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Generate multi-modal content and functional code
+                using advanced models.</p>
+            </div>
           </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Prompt Engineering Techniques</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Master the art of crafting effective prompts to maximize AI output quality.</p>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="globe" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Real-world Gen AI Applications</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">See how Generative AI is transforming various
+                domains and industries.</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="bot" class="size-5"></i>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="briefcase" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Mini Projects and Case Studies</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Work on mini-projects and analyze real-world AI
+                implementations.</p>
+            </div>
           </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">AI Chatbot Development</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Build and deploy intelligent conversational agents from scratch.</p>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="book-open" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Research and Publication Guidance</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Learn how to conduct AI research and publish
+                findings in reputed journals.</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="sparkles" class="size-5"></i>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="building" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">Exposure to Industry Use Cases</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Gain insights into how top tech companies
+                integrate AI into workflows.</p>
+            </div>
           </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Text, Image, and Code Generation</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Generate multi-modal content and functional code using advanced models.</p>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
+            <div
+              class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
+              <i data-lucide="award" class="size-5"></i>
+            </div>
+            <div>
+              <h3 class="text-foreground font-semibold mb-2">E-Certificate upon Successful Completion</h3>
+              <p class="text-sm text-muted-foreground leading-relaxed">Receive an official certificate of completion at
+                the end of the program.</p>
+            </div>
           </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="globe" class="size-5"></i>
-          </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Real-world Gen AI Applications</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">See how Generative AI is transforming various domains and industries.</p>
-          </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="briefcase" class="size-5"></i>
-          </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Mini Projects and Case Studies</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Work on mini-projects and analyze real-world AI implementations.</p>
-          </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="book-open" class="size-5"></i>
-          </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Research and Publication Guidance</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Learn how to conduct AI research and publish findings in reputed journals.</p>
-          </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="building" class="size-5"></i>
-          </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">Exposure to Industry Use Cases</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Gain insights into how top tech companies integrate AI into workflows.</p>
-          </div>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-start gap-4 group">
-          <div class="size-10 rounded bg-neon/10 flex items-center justify-center text-neon group-hover:scale-110 transition-transform shrink-0">
-            <i data-lucide="award" class="size-5"></i>
-          </div>
-          <div>
-            <h3 class="text-foreground font-semibold mb-2">E-Certificate upon Successful Completion</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Receive an official certificate of completion at the end of the program.</p>
-          </div>
-        </div>
-        
+
         </div>
       </div>
     </section>
@@ -317,82 +441,271 @@
       <div class="mx-auto max-w-7xl text-backdrop fade-in-up">
         <div class="flex flex-col items-center text-center mb-4 sm:mb-6">
           <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 03 &middot; Curriculum</div>
-          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter">Detailed <span class="text-gradient">Syllabus.</span></h2>
+          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter">Detailed <span
+              class="text-gradient">Syllabus.</span></h2>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 01</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 1: Introduction to Artificial Intelligence and Gen AI</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Evolution of Artificial Intelligence</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Introduction to Generative AI</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Traditional AI vs Generative AI</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Applications of Gen AI</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Future Scope and Industry Trends</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 02</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 2: Fundamentals of Machine Learning and Deep Learning</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Basics of Machine Learning</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Neural Networks and Deep Learning</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">NLP Fundamentals</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Transformers and Attention Mechanism</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Introduction to Foundation Models</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 03</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 3: Large Language Models (LLMs)</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Understanding LLM Architecture</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">GPT, Gemini, Claude, LLaMA, and Open-source Models</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Tokenization and Embeddings</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Fine-tuning Concepts</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Limitations and Challenges of LLMs</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 04</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 4: Prompt Engineering</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Basics of Prompt Engineering</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Zero-shot and Few-shot Prompting</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Chain-of-Thought Prompting</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Role-based Prompting</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Prompt Optimization Techniques</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Hands-on Prompt Design</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 05</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 5: AI Chatbots and Conversational AI</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Evolution of Chatbots</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Designing Conversational Flows</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Building Chatbots using APIs</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">LangChain and Vector Databases</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Deploying AI Assistants</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 06</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 6: Text Generation and NLP Applications</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Content Creation (Blogs, Articles)</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Summarization and Translation</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Code Generation and Debugging</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Sentiment Analysis and Text Classification</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 07</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 7: Image Generation Models</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Introduction to DALL-E, MidJourney, Stable Diffusion</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Text-to-Image Generation</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Image-to-Image Translation</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Prompting for Visuals</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Ethical Concerns in Image Gen AI</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 08</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 8: Real-World Applications of Gen AI</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in Healthcare</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in Finance</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in Marketing and Design</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in Software Development</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Case Studies</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 09</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 9: Hands-on Projects</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project 1: Custom AI Chatbot</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project 2: Content Generation Tool</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project 3: AI-powered Image Editor</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 10</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 10: AI Ethics, Security, and Future Directions</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Bias and Fairness in AI</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Deepfakes and Misinformation</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Data Privacy and Security</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Regulations and Guidelines</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">The Future of AGI (Artificial General Intelligence)</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 11</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 11: Research and Publication Guidance</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Formulating Research Problems in AI</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Literature Review Techniques</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Drafting Research Papers</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Identifying Reputed Journals (SCI/Scopus)</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Responding to Reviewer Comments</span></li></ul>
-        </div>
-        
-        <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
-          <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 12</div>
-          <h3 class="text-lg font-bold mb-4 leading-tight">Module 12: Capstone Project and Evaluation</h3>
-          <ul class="space-y-2"><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project Presentation</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Evaluation and Feedback</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Q&A Session</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Certificate Distribution</span></li><li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right" class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Valedictory Ceremony</span></li></ul>
-        </div>
-        
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 01</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 1: Introduction to Artificial Intelligence and Gen
+              AI</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Evolution of
+                  Artificial Intelligence</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Introduction to
+                  Generative AI</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Traditional AI
+                  vs Generative AI</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Applications of
+                  Gen AI</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Future Scope and
+                  Industry Trends</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 02</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 2: Fundamentals of Machine Learning and Deep
+              Learning</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Basics of
+                  Machine Learning</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Neural Networks
+                  and Deep Learning</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">NLP
+                  Fundamentals</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Transformers and
+                  Attention Mechanism</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Introduction to
+                  Foundation Models</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 03</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 3: Large Language Models (LLMs)</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Understanding
+                  LLM Architecture</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">GPT, Gemini,
+                  Claude, LLaMA, and Open-source Models</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Tokenization and
+                  Embeddings</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Fine-tuning
+                  Concepts</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Limitations and
+                  Challenges of LLMs</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 04</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 4: Prompt Engineering</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Basics of Prompt
+                  Engineering</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Zero-shot and
+                  Few-shot Prompting</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Chain-of-Thought
+                  Prompting</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Role-based
+                  Prompting</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Prompt
+                  Optimization Techniques</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Hands-on Prompt
+                  Design</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 05</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 5: AI Chatbots and Conversational AI</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Evolution of
+                  Chatbots</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Designing
+                  Conversational Flows</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Building
+                  Chatbots using APIs</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">LangChain and
+                  Vector Databases</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Deploying AI
+                  Assistants</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 06</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 6: Text Generation and NLP Applications</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Content Creation
+                  (Blogs, Articles)</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Summarization
+                  and Translation</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Code Generation
+                  and Debugging</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Sentiment
+                  Analysis and Text Classification</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 07</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 7: Image Generation Models</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Introduction to
+                  DALL-E, MidJourney, Stable Diffusion</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Text-to-Image
+                  Generation</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Image-to-Image
+                  Translation</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Prompting for
+                  Visuals</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Ethical Concerns
+                  in Image Gen AI</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 08</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 8: Real-World Applications of Gen AI</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in
+                  Healthcare</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in
+                  Finance</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in
+                  Marketing and Design</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Gen AI in
+                  Software Development</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Case
+                  Studies</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 09</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 9: Hands-on Projects</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project 1:
+                  Custom AI Chatbot</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project 2:
+                  Content Generation Tool</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project 3:
+                  AI-powered Image Editor</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 10</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 10: AI Ethics, Security, and Future Directions</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Bias and
+                  Fairness in AI</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Deepfakes and
+                  Misinformation</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Data Privacy and
+                  Security</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Regulations and
+                  Guidelines</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">The Future of
+                  AGI (Artificial General Intelligence)</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 11</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 11: Research and Publication Guidance</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Formulating
+                  Research Problems in AI</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Literature
+                  Review Techniques</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Drafting
+                  Research Papers</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Identifying
+                  Reputed Journals (SCI/Scopus)</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Responding to
+                  Reviewer Comments</span></li>
+            </ul>
+          </div>
+
+          <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-3">Module 12</div>
+            <h3 class="text-lg font-bold mb-4 leading-tight">Module 12: Capstone Project and Evaluation</h3>
+            <ul class="space-y-2">
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Project
+                  Presentation</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Evaluation and
+                  Feedback</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Q&A
+                  Session</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Certificate
+                  Distribution</span></li>
+              <li class="flex items-start gap-2"><span class="text-neon mt-1 shrink-0"><i data-lucide="chevron-right"
+                    class="size-3"></i></span><span class="text-sm text-muted-foreground leading-tight">Valedictory
+                  Ceremony</span></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </section>
@@ -401,403 +714,438 @@
     <section id="speakers" class="relative py-4 sm:py-6 overflow-hidden fade-in-up">
       <div class="px-4 sm:px-4 mx-auto max-w-7xl mb-4 sm:mb-6 text-backdrop">
         <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 05 &middot; Speakers</div>
-        <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tighter max-w-3xl">Voices from the <span class="text-gradient">frontier.</span></h2>
+        <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tighter max-w-3xl">Voices from the <span
+            class="text-gradient">frontier.</span></h2>
       </div>
       <div class="relative">
-        <div class="absolute left-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-r from-background to-transparent z-10"></div>
-        <div class="absolute right-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-l from-background to-transparent z-10"></div>
+        <div class="absolute left-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-r from-background to-transparent z-10">
+        </div>
+        <div class="absolute right-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-l from-background to-transparent z-10">
+        </div>
         <div class="flex marquee gap-4 sm:gap-4 w-max">
-          
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/manasa-devadas.jpeg" alt="Manasa Devadas" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_01</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/manasa-devadas.jpeg" alt="Manasa Devadas"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_01</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Manasa Devadas</h3>
+            <p class="text-base text-muted-foreground mt-2">Microsoft</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Manasa Devadas</h3>
-          <p class="text-base text-muted-foreground mt-2">Microsoft</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="size-20 rounded-full bg-gradient-to-br from-electric via-violet-glow to-neon flex items-center justify-center font-bold text-2xl">
+                BG</div>
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_02</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Banashri Gogoi</h3>
+            <p class="text-base text-muted-foreground mt-2">Conduent</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <div class="size-20 rounded-full bg-gradient-to-br from-electric via-violet-glow to-neon flex items-center justify-center font-bold text-2xl">BG</div>
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_02</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/asma-sbai.jpeg" alt="Asma Sbai"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_03</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Asma Sbai</h3>
+            <p class="text-base text-muted-foreground mt-2">Cadi Ayyad University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">Morocco</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Banashri Gogoi</h3>
-          <p class="text-base text-muted-foreground mt-2">Conduent</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/akm-bahalul-haque.jpeg" alt="Dr. AKM Bahalul Haque"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_04</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. AKM Bahalul Haque</h3>
+            <p class="text-base text-muted-foreground mt-2">Åbo Akademi University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">Finland</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/asma-sbai.jpeg" alt="Asma Sbai" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_03</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/suvendu-chand.jpeg" alt="Suvendu Chand"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_05</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Suvendu Chand</h3>
+            <p class="text-base text-muted-foreground mt-2">Action for Policy & Economic Growth</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Asma Sbai</h3>
-          <p class="text-base text-muted-foreground mt-2">Cadi Ayyad University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">Morocco</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/atul-joshi.jpeg" alt="Atul Joshi"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_06</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Atul Joshi</h3>
+            <p class="text-base text-muted-foreground mt-2">Nokia</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/akm-bahalul-haque.jpeg" alt="Dr. AKM Bahalul Haque" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_04</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/iqbal-khan.jpeg" alt="Iqbal Khan"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_07</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Iqbal Khan</h3>
+            <p class="text-base text-muted-foreground mt-2">Robert Bosch</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. AKM Bahalul Haque</h3>
-          <p class="text-base text-muted-foreground mt-2">Åbo Akademi University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">Finland</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/anu-sayal.jpeg" alt="Dr. Anu Sayal"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_08</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Anu Sayal</h3>
+            <p class="text-base text-muted-foreground mt-2">Taylor's University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">Malaysia</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/suvendu-chand.jpeg" alt="Suvendu Chand" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_05</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/shruti-gulati.jpeg" alt="Dr. Shruti Gulati"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_09</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Shruti Gulati</h3>
+            <p class="text-base text-muted-foreground mt-2">Pure Learning Education & Research Training</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Suvendu Chand</h3>
-          <p class="text-base text-muted-foreground mt-2">Action for Policy & Economic Growth</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/ritesh-ranjan.jpg" alt="Dr. Ritesh Ranjan"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_10</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Ritesh Ranjan</h3>
+            <p class="text-base text-muted-foreground mt-2">Jagran Lakecity University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/atul-joshi.jpeg" alt="Atul Joshi" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_06</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/neetu-bali-kamra.jpeg" alt="Dr. Neetu Bali Kamra"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_11</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Neetu Bali Kamra</h3>
+            <p class="text-base text-muted-foreground mt-2">IBM / SAP</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Atul Joshi</h3>
-          <p class="text-base text-muted-foreground mt-2">Nokia</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/divya-singh.jpeg" alt="Divya Singh"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_12</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Divya Singh</h3>
+            <p class="text-base text-muted-foreground mt-2">SAP Lab</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/iqbal-khan.jpeg" alt="Iqbal Khan" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_07</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/vivek-pemawat.jpeg" alt="Vivek Pemawat"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_13</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Vivek Pemawat</h3>
+            <p class="text-base text-muted-foreground mt-2">Acceldata</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Iqbal Khan</h3>
-          <p class="text-base text-muted-foreground mt-2">Robert Bosch</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/rana-dutta.png" alt="Rana Dutta"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_14</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Rana Dutta</h3>
+            <p class="text-base text-muted-foreground mt-2">Quantum Tiger</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/anu-sayal.jpeg" alt="Dr. Anu Sayal" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_08</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/oishila-bandhyopadhyay.jpeg" alt="Oishila Bandhyopadhyay"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_15</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Oishila Bandhyopadhyay</h3>
+            <p class="text-base text-muted-foreground mt-2">IIIT Kalyani</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Anu Sayal</h3>
-          <p class="text-base text-muted-foreground mt-2">Taylor's University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">Malaysia</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/manasa-devadas.jpeg" alt="Manasa Devadas"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_01</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Manasa Devadas</h3>
+            <p class="text-base text-muted-foreground mt-2">Microsoft</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/shruti-gulati.jpeg" alt="Dr. Shruti Gulati" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_09</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="size-20 rounded-full bg-gradient-to-br from-electric via-violet-glow to-neon flex items-center justify-center font-bold text-2xl">
+                BG</div>
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_02</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Banashri Gogoi</h3>
+            <p class="text-base text-muted-foreground mt-2">Conduent</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Shruti Gulati</h3>
-          <p class="text-base text-muted-foreground mt-2">Pure Learning Education & Research Training</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/asma-sbai.jpeg" alt="Asma Sbai"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_03</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Asma Sbai</h3>
+            <p class="text-base text-muted-foreground mt-2">Cadi Ayyad University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">Morocco</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/ritesh-ranjan.jpg" alt="Dr. Ritesh Ranjan" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_10</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/akm-bahalul-haque.jpeg" alt="Dr. AKM Bahalul Haque"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_04</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. AKM Bahalul Haque</h3>
+            <p class="text-base text-muted-foreground mt-2">Åbo Akademi University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">Finland</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Ritesh Ranjan</h3>
-          <p class="text-base text-muted-foreground mt-2">Jagran Lakecity University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/suvendu-chand.jpeg" alt="Suvendu Chand"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_05</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Suvendu Chand</h3>
+            <p class="text-base text-muted-foreground mt-2">Action for Policy & Economic Growth</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/neetu-bali-kamra.jpeg" alt="Dr. Neetu Bali Kamra" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_11</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/atul-joshi.jpeg" alt="Atul Joshi"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_06</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Atul Joshi</h3>
+            <p class="text-base text-muted-foreground mt-2">Nokia</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Neetu Bali Kamra</h3>
-          <p class="text-base text-muted-foreground mt-2">IBM / SAP</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/iqbal-khan.jpeg" alt="Iqbal Khan"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_07</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Iqbal Khan</h3>
+            <p class="text-base text-muted-foreground mt-2">Robert Bosch</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/divya-singh.jpeg" alt="Divya Singh" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_12</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/anu-sayal.jpeg" alt="Dr. Anu Sayal"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_08</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Anu Sayal</h3>
+            <p class="text-base text-muted-foreground mt-2">Taylor's University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">Malaysia</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Divya Singh</h3>
-          <p class="text-base text-muted-foreground mt-2">SAP Lab</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/shruti-gulati.jpeg" alt="Dr. Shruti Gulati"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_09</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Shruti Gulati</h3>
+            <p class="text-base text-muted-foreground mt-2">Pure Learning Education & Research Training</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/vivek-pemawat.jpeg" alt="Vivek Pemawat" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_13</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/ritesh-ranjan.jpg" alt="Dr. Ritesh Ranjan"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_10</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Ritesh Ranjan</h3>
+            <p class="text-base text-muted-foreground mt-2">Jagran Lakecity University</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Vivek Pemawat</h3>
-          <p class="text-base text-muted-foreground mt-2">Acceldata</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/neetu-bali-kamra.jpeg" alt="Dr. Neetu Bali Kamra"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_11</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Dr. Neetu Bali Kamra</h3>
+            <p class="text-base text-muted-foreground mt-2">IBM / SAP</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/rana-dutta.png" alt="Rana Dutta" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_14</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/divya-singh.jpeg" alt="Divya Singh"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_12</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Divya Singh</h3>
+            <p class="text-base text-muted-foreground mt-2">SAP Lab</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Rana Dutta</h3>
-          <p class="text-base text-muted-foreground mt-2">Quantum Tiger</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/vivek-pemawat.jpeg" alt="Vivek Pemawat"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_13</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Vivek Pemawat</h3>
+            <p class="text-base text-muted-foreground mt-2">Acceldata</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/oishila-bandhyopadhyay.jpeg" alt="Oishila Bandhyopadhyay" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_15</div>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/rana-dutta.png" alt="Rana Dutta"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_14</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Rana Dutta</h3>
+            <p class="text-base text-muted-foreground mt-2">Quantum Tiger</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold leading-tight">Oishila Bandhyopadhyay</h3>
-          <p class="text-base text-muted-foreground mt-2">IIIT Kalyani</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+
+          <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
+            <div class="flex items-start justify-between mb-4">
+              <img src="assets/speakers/oishila-bandhyopadhyay.jpeg" alt="Oishila Bandhyopadhyay"
+                class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
+              <div class="font-mono text-[10px] text-muted-foreground">SPK_15</div>
+            </div>
+            <h3 class="text-xl font-bold leading-tight">Oishila Bandhyopadhyay</h3>
+            <p class="text-base text-muted-foreground mt-2">IIIT Kalyani</p>
+            <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
+              <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
+              <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
+            </div>
           </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/manasa-devadas.jpeg" alt="Manasa Devadas" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_01</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Manasa Devadas</h3>
-          <p class="text-base text-muted-foreground mt-2">Microsoft</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <div class="size-20 rounded-full bg-gradient-to-br from-electric via-violet-glow to-neon flex items-center justify-center font-bold text-2xl">BG</div>
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_02</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Banashri Gogoi</h3>
-          <p class="text-base text-muted-foreground mt-2">Conduent</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/asma-sbai.jpeg" alt="Asma Sbai" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_03</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Asma Sbai</h3>
-          <p class="text-base text-muted-foreground mt-2">Cadi Ayyad University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">Morocco</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/akm-bahalul-haque.jpeg" alt="Dr. AKM Bahalul Haque" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_04</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. AKM Bahalul Haque</h3>
-          <p class="text-base text-muted-foreground mt-2">Åbo Akademi University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">Finland</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/suvendu-chand.jpeg" alt="Suvendu Chand" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_05</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Suvendu Chand</h3>
-          <p class="text-base text-muted-foreground mt-2">Action for Policy & Economic Growth</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/atul-joshi.jpeg" alt="Atul Joshi" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_06</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Atul Joshi</h3>
-          <p class="text-base text-muted-foreground mt-2">Nokia</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/iqbal-khan.jpeg" alt="Iqbal Khan" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_07</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Iqbal Khan</h3>
-          <p class="text-base text-muted-foreground mt-2">Robert Bosch</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/anu-sayal.jpeg" alt="Dr. Anu Sayal" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_08</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Anu Sayal</h3>
-          <p class="text-base text-muted-foreground mt-2">Taylor's University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">Malaysia</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/shruti-gulati.jpeg" alt="Dr. Shruti Gulati" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_09</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Shruti Gulati</h3>
-          <p class="text-base text-muted-foreground mt-2">Pure Learning Education & Research Training</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/ritesh-ranjan.jpg" alt="Dr. Ritesh Ranjan" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_10</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Ritesh Ranjan</h3>
-          <p class="text-base text-muted-foreground mt-2">Jagran Lakecity University</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/neetu-bali-kamra.jpeg" alt="Dr. Neetu Bali Kamra" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_11</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Dr. Neetu Bali Kamra</h3>
-          <p class="text-base text-muted-foreground mt-2">IBM / SAP</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/divya-singh.jpeg" alt="Divya Singh" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_12</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Divya Singh</h3>
-          <p class="text-base text-muted-foreground mt-2">SAP Lab</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/vivek-pemawat.jpeg" alt="Vivek Pemawat" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_13</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Vivek Pemawat</h3>
-          <p class="text-base text-muted-foreground mt-2">Acceldata</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/rana-dutta.png" alt="Rana Dutta" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_14</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Rana Dutta</h3>
-          <p class="text-base text-muted-foreground mt-2">Quantum Tiger</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
-        <div class="w-64 sm:w-80 shrink-0 glass rounded-lg p-4 sm:p-4 hover:border-neon transition group">
-          <div class="flex items-start justify-between mb-4">
-            <img src="assets/speakers/oishila-bandhyopadhyay.jpeg" alt="Oishila Bandhyopadhyay" class="size-20 rounded-full object-cover ring-2 ring-neon/30" width="80" height="80" loading="lazy" />
-            <div class="font-mono text-[10px] text-muted-foreground">SPK_15</div>
-          </div>
-          <h3 class="text-xl font-bold leading-tight">Oishila Bandhyopadhyay</h3>
-          <p class="text-base text-muted-foreground mt-2">IIIT Kalyani</p>
-          <div class="mt-5 pt-4 border-t border-border flex items-center justify-between">
-            <span class="font-mono text-xs uppercase tracking-widest text-neon">India</span>
-            <i data-lucide="globe" class="size-4 text-muted-foreground"></i>
-          </div>
-        </div>
-        
+
         </div>
       </div>
     </section>
@@ -807,29 +1155,43 @@
       <div class="mx-auto max-w-7xl text-backdrop fade-in-up">
         <div class="mb-4 sm:mb-6">
           <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 06 &middot; Pricing</div>
-          <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tighter">Summer School <span class="text-gradient">Fees.</span></h2>
+          <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tighter">Summer School <span
+              class="text-gradient">Fees.</span></h2>
         </div>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
+          <div
+            class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
             <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Indian Learner</div>
             <div class="text-4xl lg:text-5xl font-bold tracking-tighter mb-4">₹999</div>
-            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative AI program, hands-on labs, and certification.</p>
+            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative
+              AI program, hands-on labs, and certification.</p>
           </div>
-          <div class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
-            <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">International Learner</div>
+          <div
+            class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">International
+              Learner</div>
             <div class="text-4xl lg:text-5xl font-bold tracking-tighter mb-4">$25</div>
-            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative AI program, hands-on labs, and certification.</p>
+            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative
+              AI program, hands-on labs, and certification.</p>
           </div>
-          <div class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
-            <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Industry Personnel (India)</div>
+          <div
+            class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
+            <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Industry Personnel
+              (India)</div>
             <div class="text-4xl lg:text-5xl font-bold tracking-tighter mb-4">₹1999</div>
-            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative AI program, hands-on labs, and certification.</p>
+            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative
+              AI program, hands-on labs, and certification.</p>
           </div>
-          <div class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
-            <div class="absolute -top-3 -right-3"><span class="relative flex h-6 w-6"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon opacity-75"></span><span class="relative inline-flex rounded-full h-6 w-6 bg-neon"></span></span></div>
-            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-4">Industry Personnel (Foreign)</div>
+          <div
+            class="group relative glass rounded-lg p-4 transition-all duration-500 hover:-translate-y-2 flex flex-col hover:shadow-[0_0_20px_rgba(12,249,237,0.3)] hover:border-neon">
+            <div class="absolute -top-3 -right-3"><span class="relative flex h-6 w-6"><span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-neon opacity-75"></span><span
+                  class="relative inline-flex rounded-full h-6 w-6 bg-neon"></span></span></div>
+            <div class="font-mono text-[10px] uppercase tracking-widest text-neon mb-4">Industry Personnel (Foreign)
+            </div>
             <div class="text-4xl lg:text-5xl font-bold tracking-tighter mb-4">$99</div>
-            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative AI program, hands-on labs, and certification.</p>
+            <p class="text-xs sm:text-sm text-muted-foreground mb-6 flex-grow">Complete access to the 15-day Generative
+              AI program, hands-on labs, and certification.</p>
           </div>
         </div>
       </div>
@@ -843,27 +1205,35 @@
         <div class="relative grid lg:grid-cols-2 gap-8 mb-10 border-b border-border/50 pb-8">
           <div>
             <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 07 &middot; Reserve Seat</div>
-            <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4">Limited seats.<br/><span class="text-gradient">Per batch.</span></h2>
-            <p class="text-muted-foreground text-lg mb-6 max-w-md">Click below to secure your spot for the 2026 cohort.</p>
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-tighter mb-4">Limited seats.<br /><span
+                class="text-gradient">Per batch.</span></h2>
+            <p class="text-muted-foreground text-lg mb-6 max-w-md">Click below to secure your spot for the 2026 cohort.
+            </p>
             <div class="pt-4">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfumRWp9TDO6VQa4MO4_gLYOPada4VhFWIc2nPw7uzRgNpQ/viewform?usp=sharing&ouid=116997449402096072585" target="_blank" rel="noopener noreferrer" class="w-full sm:w-max px-6 py-4 bg-gradient-to-r from-electric via-violet-glow to-neon text-white font-semibold rounded-sm glow-neon hover:opacity-90 transition flex items-center justify-center gap-2">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdAfumRWp9TDO6VQa4MO4_gLYOPada4VhFWIc2nPw7uzRgNpQ/viewform?usp=sharing&ouid=116997449402096072585"
+                target="_blank" rel="noopener noreferrer"
+                class="w-full sm:w-max px-6 py-4 bg-gradient-to-r from-electric via-violet-glow to-neon text-white font-semibold rounded-sm glow-neon hover:opacity-90 transition flex items-center justify-center gap-2">
                 Reserve Seat <i data-lucide="arrow-right" class="size-4"></i>
               </a>
             </div>
           </div>
           <div class="space-y-6">
             <div class="glass rounded-lg p-6 text-center">
-              <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Scan to Register</div>
+              <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Scan to Register
+              </div>
               <div class="mx-auto w-48 h-48 bg-white rounded p-3 flex items-center justify-center">
                 <img src="assets/qr.png" alt="Registration QR Code" class="size-full object-contain" />
               </div>
               <div class="mt-4 font-mono text-xs text-neon">JIS.SS.2026/QR</div>
             </div>
             <div class="glass rounded-lg p-4 flex items-center gap-4">
-              <div class="size-12 rounded-full bg-gradient-to-br from-electric to-neon flex items-center justify-center"><i data-lucide="phone" class="size-5"></i></div>
+              <div
+                class="size-12 rounded-full bg-gradient-to-br from-electric to-neon flex items-center justify-center"><i
+                  data-lucide="phone" class="size-5"></i></div>
               <div>
                 <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Call / WhatsApp</div>
-                <a href="tel:+919831280954" class="text-2xl font-bold tracking-tight hover:text-neon transition">+91 9831280954</a>
+                <a href="tel:+919831280954" class="text-2xl font-bold tracking-tight hover:text-neon transition">+91
+                  9831280954</a>
               </div>
             </div>
           </div>
@@ -872,10 +1242,12 @@
         <!-- TEAM -->
         <div class="relative">
           <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ 08 &middot; Organizing Team</div>
-          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-6">Meet the <span class="text-gradient">Team.</span></h2>
+          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter mb-6">Meet the <span
+              class="text-gradient">Team.</span></h2>
           <div class="grid md:grid-cols-2 gap-4 mb-4">
             <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-center gap-4">
-              <img src="assets/team/partha-sarkar.jpg" alt="Prof.(Dr.) Partha Sarkar, Principal of JISCE" class="size-14 sm:size-16 text-lg rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+              <img src="assets/team/partha-sarkar.jpg" alt="Prof.(Dr.) Partha Sarkar, Principal of JISCE"
+                class="size-14 sm:size-16 text-lg rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
               <div>
                 <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Advisor</div>
                 <div class="text-xl font-bold">Prof.(Dr.) Partha Sarkar</div>
@@ -883,7 +1255,9 @@
               </div>
             </div>
             <div class="glass rounded-lg p-4 hover:border-neon transition-all duration-300 flex items-center gap-4">
-              <img src="assets/team/sitanath-biswas.jpeg" alt="Dr. Sitanath Biswas, HOD, Dept. of CST & CSE(AIML), JISCE" class="size-14 sm:size-16 text-lg rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+              <img src="assets/team/sitanath-biswas.jpeg"
+                alt="Dr. Sitanath Biswas, HOD, Dept. of CST & CSE(AIML), JISCE"
+                class="size-14 sm:size-16 text-lg rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
               <div>
                 <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-1">Convenor</div>
                 <div class="text-xl font-bold">Dr. Sitanath Biswas</div>
@@ -894,37 +1268,44 @@
           <div class="glass rounded-lg p-4 sm:p-6">
             <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Team Members</div>
             <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-4">
-              
-        <div class="flex items-center gap-3">
-          <img src="assets/team/manish-mukul-das.jpeg" alt="Dr. Manish Mukul Das" class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
-          <span class="font-medium text-foreground">Dr. Manish Mukul Das</span>
-        </div>
-        
-        <div class="flex items-center gap-3">
-          <img src="assets/team/sayan-chakraborty.png" alt="Dr. Sayan Chakraborty" class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
-          <span class="font-medium text-foreground">Dr. Sayan Chakraborty</span>
-        </div>
-        
-        <div class="flex items-center gap-3">
-          <img src="assets/team/abhisek-roy.jpeg" alt="Dr. Abhisek Roy" class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
-          <span class="font-medium text-foreground">Dr. Abhisek Roy</span>
-        </div>
-        
-        <div class="flex items-center gap-3">
-          <img src="assets/team/abhisek-hazra.jpeg" alt="Mr. Abhisek Hazra" class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
-          <span class="font-medium text-foreground">Mr. Abhisek Hazra</span>
-        </div>
-        
-        <div class="flex items-center gap-3">
-          <div class="size-10 text-xs rounded-full bg-gradient-to-br from-electric via-violet-glow to-neon flex items-center justify-center font-bold text-white shrink-0 shadow-lg">SR</div>
-          <span class="font-medium text-foreground">Mrs. Sashwati Rakshit</span>
-        </div>
-        
-        <div class="flex items-center gap-3">
-          <img src="assets/team/arnab-kumar-das.jpeg" alt="Mr. Arnab Kumar Das" class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
-          <span class="font-medium text-foreground">Mr. Arnab Kumar Das</span>
-        </div>
-        
+
+              <div class="flex items-center gap-3">
+                <img src="assets/team/manish-mukul-das.jpeg" alt="Dr. Manish Mukul Das"
+                  class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+                <span class="font-medium text-foreground">Dr. Manish Mukul Das</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img src="assets/team/sayan-chakraborty.png" alt="Dr. Sayan Chakraborty"
+                  class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+                <span class="font-medium text-foreground">Dr. Sayan Chakraborty</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img src="assets/team/abhisek-roy.jpeg" alt="Dr. Abhisek Roy"
+                  class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+                <span class="font-medium text-foreground">Dr. Abhisek Roy</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img src="assets/team/abhisek-hazra.jpeg" alt="Mr. Abhisek Hazra"
+                  class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+                <span class="font-medium text-foreground">Mr. Abhisek Hazra</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <div
+                  class="size-10 text-xs rounded-full bg-gradient-to-br from-electric via-violet-glow to-neon flex items-center justify-center font-bold text-white shrink-0 shadow-lg">
+                  SR</div>
+                <span class="font-medium text-foreground">Mrs. Sashwati Rakshit</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img src="assets/team/arnab-kumar-das.jpeg" alt="Mr. Arnab Kumar Das"
+                  class="size-10 text-xs rounded-full object-cover ring-2 ring-neon/30 shrink-0" />
+                <span class="font-medium text-foreground">Mr. Arnab Kumar Das</span>
+              </div>
+
             </div>
           </div>
         </div>
@@ -936,7 +1317,8 @@
       <div class="mx-auto max-w-7xl text-backdrop fade-in-up">
         <div class="flex flex-col items-center text-center mb-6 sm:mb-8">
           <div class="font-mono text-xs uppercase tracking-[0.3em] text-neon mb-4">/ Payment</div>
-          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter">Payment <span class="text-gradient">Details.</span></h2>
+          <h2 class="text-3xl sm:text-5xl font-bold tracking-tighter">Payment <span
+              class="text-gradient">Details.</span></h2>
         </div>
         <div class="max-w-2xl mx-auto glass rounded-xl p-6 sm:p-8 hover:border-neon transition-colors duration-300">
           <div class="space-y-4 text-sm sm:text-base">
@@ -964,11 +1346,17 @@
         <div class="md:col-span-2">
           <div class="font-mono text-[10px] uppercase tracking-widest text-muted-foreground mb-4">Organized By</div>
           <div class="text-xl font-bold mb-2">Dept. of CST & CSE(AIML)</div>
-          <div class="text-muted-foreground mb-4">JIS College of Engineering<br/>Kalyani, West Bengal</div>
+          <div class="text-muted-foreground mb-4">JIS College of Engineering<br />Kalyani, West Bengal</div>
           <div class="flex gap-4">
-            <a href="#" class="size-10 rounded-full glass flex items-center justify-center hover:bg-neon/10 hover:text-neon transition"><i data-lucide="facebook" class="size-4"></i></a>
-            <a href="#" class="size-10 rounded-full glass flex items-center justify-center hover:bg-neon/10 hover:text-neon transition"><i data-lucide="instagram" class="size-4"></i></a>
-            <a href="#" class="size-10 rounded-full glass flex items-center justify-center hover:bg-neon/10 hover:text-neon transition"><i data-lucide="linkedin" class="size-4"></i></a>
+            <a href="#"
+              class="size-10 rounded-full glass flex items-center justify-center hover:bg-neon/10 hover:text-neon transition"><i
+                data-lucide="facebook" class="size-4"></i></a>
+            <a href="#"
+              class="size-10 rounded-full glass flex items-center justify-center hover:bg-neon/10 hover:text-neon transition"><i
+                data-lucide="instagram" class="size-4"></i></a>
+            <a href="#"
+              class="size-10 rounded-full glass flex items-center justify-center hover:bg-neon/10 hover:text-neon transition"><i
+                data-lucide="linkedin" class="size-4"></i></a>
           </div>
         </div>
         <div>
@@ -985,17 +1373,22 @@
           <ul class="space-y-2 text-sm text-muted-foreground">
             <li><a href="https://www.jiscollege.ac.in" class="hover:text-foreground">www.jiscollege.ac.in</a></li>
             <li><a href="tel:+919831280954" class="hover:text-foreground">+91 9831280954</a></li>
-            <li><a href="mailto:abhisek.hazra@jiscollege.ac.in" class="hover:text-foreground">abhisek.hazra@jiscollege.ac.in</a></li>
+            <li><a href="mailto:abhisek.hazra@jiscollege.ac.in"
+                class="hover:text-foreground">abhisek.hazra@jiscollege.ac.in</a></li>
           </ul>
         </div>
       </div>
-      <div class="pt-4 sm:pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-muted-foreground text-center sm:text-left">
-        <span>© 2026 JIS College of Engineering · All Rights Reserved · Developed by Mr. Sourjya Biswas & Ms. Shreya Dutta, Dept. of CST & CSE(AIML), JISCE</span>
-        <span class="flex items-center gap-2"><span class="size-2 rounded-full bg-neon animate-pulse-glow"></span> System Online · Edition 01</span>
+      <div
+        class="pt-4 sm:pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest text-muted-foreground text-center sm:text-left">
+        <span>© 2026 JIS College of Engineering · All Rights Reserved · Developed by Mr. Sourjya Biswas, Dept. of CST &
+          CSE(AIML), JISCE</span>
+        <span class="flex items-center gap-2"><span class="size-2 rounded-full bg-neon animate-pulse-glow"></span>
+          System Online · Edition 01</span>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
